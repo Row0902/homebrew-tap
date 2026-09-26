@@ -10,19 +10,22 @@ Official Homebrew tap for [Row0902](https://github.com/Row0902)'s open-source pr
 
 ## Usage
 
-You can install any formula directly:
+### Recommended (Single Command)
+Installing via the fully-qualified formula name automatically trusts and installs it:
 
 ```bash
 brew install Row0902/tap/cutver
 ```
 
-Or tap the repository first:
+### Manual Tap (Homebrew 6.0+)
+If you add the tap separately, Homebrew requires explicit trust to load third-party formulae:
 
 ```bash
 brew tap Row0902/tap
+brew trust Row0902/tap
 brew install cutver
 ```
 
 ## Documentation
 
-See [`cutver`'s documentation](https://github.com/cutver/cutver) or [Homebrew's documentation](https://docs.brew.sh).
+See [`cutver`'s documentation](https://github.com/cutver/cutver) or [Homebrew's documentation](https://docs.brew.sh/Tap-Trust).
