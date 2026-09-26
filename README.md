@@ -1,18 +1,28 @@
 # Row0902 Tap
 
-## How do I install these formulae?
+Official Homebrew tap for [Row0902](https://github.com/Row0902)'s open-source projects.
 
-`brew install row0902/tap/<formula>`
+## Available Formulae
 
-Or `brew tap row0902/tap` and then `brew install <formula>`.
+| Formula | Description | Install |
+| :--- | :--- | :--- |
+| **`cutver`** | Cut a release. Bump SemVer. Every project, every language. | `brew install Row0902/tap/cutver` |
 
-Or, in a `brew bundle` `Brewfile`:
+## Usage
 
-```ruby
-tap "row0902/tap"
-brew "<formula>"
+You can install any formula directly:
+
+```bash
+brew install Row0902/tap/cutver
+```
+
+Or tap the repository first:
+
+```bash
+brew tap Row0902/tap
+brew install cutver
 ```
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+See [`cutver`'s documentation](https://github.com/cutver/cutver) or [Homebrew's documentation](https://docs.brew.sh).
