@@ -5,23 +5,23 @@ class Cutver < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cutver/cutver/releases/download/v0.9.1/cutver-0.9.1-aarch64-apple-darwin.tar.gz"
-      sha256 "9270f21c529a8a1a0f73eaecd06424f4d76046a9aae5c464d145e81a02f52ae4"
+      url "https://github.com/cutver/cutver/releases/download/v0.10.0/cutver-0.10.0-aarch64-apple-darwin.tar.gz"
+      sha256 "ab6277110a340ed07eaf294c8e94d086c6b68a85b09adfbc25a4894c7c68fee3"
     end
     on_intel do
-      url "https://github.com/cutver/cutver/releases/download/v0.9.1/cutver-0.9.1-x86_64-apple-darwin.tar.gz"
-      sha256 "4d70a7327589013c943e5748347d93ae0734e1edd40ee1fa46c606323baec3b8"
+      url "https://github.com/cutver/cutver/releases/download/v0.10.0/cutver-0.10.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e8019479bc86fdf58e9374e69001daf42892c01800c0ee2c8e30c2edcbe2940d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cutver/cutver/releases/download/v0.9.1/cutver-0.9.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b32401189eea447108c37a16b384cd9678d8a682994a74be5e10355212af8c67"
+      url "https://github.com/cutver/cutver/releases/download/v0.10.0/cutver-0.10.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "06d4716150ddbe41d2eb8ead5c4285d0a4afcafae9e32f96ff4f3a46fd539d8e"
     end
     on_arm do
-      url "https://github.com/cutver/cutver/releases/download/v0.9.1/cutver-0.9.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b32401189eea447108c37a16b384cd9678d8a682994a74be5e10355212af8c67"
+      url "https://github.com/cutver/cutver/releases/download/v0.10.0/cutver-0.10.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "06d4716150ddbe41d2eb8ead5c4285d0a4afcafae9e32f96ff4f3a46fd539d8e"
     end
   end
 
@@ -30,6 +30,6 @@ class Cutver < Formula
   end
 
   test do
-    assert_match "cutver 0.9.1", shell_output("#{bin}/cutver --version")
+    assert_match "cutver #{version}", shell_output("#{bin}/cutver --version")
   end
 end
