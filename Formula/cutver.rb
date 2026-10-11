@@ -25,6 +25,8 @@ class Cutver < Formula
     end
   end
 
+  conflicts_with "cutver-plugins", because: "both install the cutver binary"
+
   def install
     bin.install "cutver"
   end
