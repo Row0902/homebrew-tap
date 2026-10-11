@@ -3,8 +3,6 @@ class CutverPlugins < Formula
   homepage "https://github.com/cutver/cutver"
   license "MIT"
 
-  conflicts_with "cutver", because: "both install the cutver binary"
-
   on_macos do
     on_arm do
       url "https://github.com/cutver/cutver/releases/download/v0.13.0/cutver-plugins-0.13.0-macos-arm64.tar.gz"
@@ -26,6 +24,8 @@ class CutverPlugins < Formula
       sha256 "76df26a9efe87b9fc5945db1db7412809d39659f2dc0435d54b5ee287e76e6b0"
     end
   end
+
+  conflicts_with "cutver", because: "both install the cutver binary"
 
   def install
     bin.install "cutver"
