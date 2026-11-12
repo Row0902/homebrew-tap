@@ -5,23 +5,23 @@ class Cutver < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cutver/cutver/releases/download/v0.15.0/cutver-0.15.0-macos-arm64.tar.gz"
-      sha256 "8bf1dac694cbcf172d8e937371f215069bd8c5377fe1ecfca59666e26bf4e3ab"
+      url "https://github.com/cutver/cutver/releases/download/v0.16.0/cutver-0.16.0-macos-arm64.tar.gz"
+      sha256 "3c5325a1f3896d936c7440b985b6e1703cd2c0ec196fffe50b503211c9bc4acc"
     end
     on_intel do
-      url "https://github.com/cutver/cutver/releases/download/v0.15.0/cutver-0.15.0-macos-x86_64.tar.gz"
-      sha256 "1b7303db769205474906927d0390ed8f69fb620db092c14fbc9476417d54aada"
+      url "https://github.com/cutver/cutver/releases/download/v0.16.0/cutver-0.16.0-macos-x86_64.tar.gz"
+      sha256 "a99cb3652d2d12e048701a66fa8e932895c14c231987a932052ce44f9d290949"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cutver/cutver/releases/download/v0.15.0/cutver-0.15.0-linux-musl-x86_64.tar.gz"
-      sha256 "25ddda7ef49da5a277073508897a53b8648d3c5641423cb01a7f81a86c02d459"
+      url "https://github.com/cutver/cutver/releases/download/v0.16.0/cutver-0.16.0-linux-musl-x86_64.tar.gz"
+      sha256 "2c3a972f5abf26cf2022311afe87ccb15add23ce05c49c54676abb545069cf44"
     end
     on_arm do
-      url "https://github.com/cutver/cutver/releases/download/v0.15.0/cutver-0.15.0-linux-musl-arm64.tar.gz"
-      sha256 "d8ccb0948fe1d2be6c4ded749fb6d887601edbdabd358e4865f94cf229d3a3e1"
+      url "https://github.com/cutver/cutver/releases/download/v0.16.0/cutver-0.16.0-linux-musl-arm64.tar.gz"
+      sha256 "c647e13583e9e97dff5fcead9cad861b81a2f74ba2de59c8defafc9d49fb3a35"
     end
   end
 
